@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://blog.amaurytq.me
+url: https://blog.amaurytq.me
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -79,11 +79,3 @@ theme: amry
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
-
-
-
-# hexo-admin authentification
-admin:
-  username: amauryT
-  password_hash: $2a$10$hljSG4W6P0/zTS4llQRbzug2n2hckBglrtrioVxbIfRuiRM0Je6pC
-  secret: $2a$10$hljSG4W6P0/zTS4llQRbzug2n2hckBglrtrioVxbIfRuiRM0Je6pC
