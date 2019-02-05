@@ -1,7 +1,7 @@
 module.exports = {
     apps: [{
         name: "blog",
-        script: "pm2 start --name blog hexo -- s"
+        script: "hexo server"
     }],
     "deploy": {
         "production": {
