@@ -1,0 +1,33 @@
+
+@font-face {
+  font-family: Eight_One;
+  src: url(/css/fonts/Eight_One.ttf);
+  font-weight: 700
+}
+
+.Eight_One {
+  font-family: Eight_One;
+  font-size: 1.3em;
+  font-weight: 900
+}
+
+.post-has-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.articles {
+  margin-top: -50px;
+}
+
+.author-image {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  margin-left: -30px;
+  border: 3px solid #ccc;
+  border-radius: 50%;
+}

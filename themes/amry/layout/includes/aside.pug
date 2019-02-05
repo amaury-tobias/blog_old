@@ -1,0 +1,25 @@
+aside.column.is-3
+  .media
+    .media-left
+      figure.image.is-64x64
+        img.is-rounded(src="/images/avatar.jpg")
+    .media-content
+      .content
+        p
+          strong
+            a(href="https://twitter.com/"+page.twitter, target="_blank", rel="noopener noreferrer")="@"+page.author
+          br
+          !=page.title
+        .level.is-mobile
+          .level-left
+            a.level-item(href="#")
+              span.icon
+                i.fas.fa-chevron-up
+            if page.prev && is_post()
+              a.level-item(href=url_for(page.prev.path))
+                span.icon
+                  i.fas.fa-chevron-left
+            if page.next && is_post()
+              a.level-item(href=url_for(page.next.path))
+                span.icon
+                  i.fas.fa-chevron-right

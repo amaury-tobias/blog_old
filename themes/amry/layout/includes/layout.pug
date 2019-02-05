@@ -1,0 +1,39 @@
+
+- var pageTitle = page.title || config.subtitle || ''
+
+<!DOCTYPE html>
+html(class="has-navbar-fixed-bottom", lang=config.language)
+  head
+    meta(charset='UTF-8')
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title= pageTitle
+    
+    link(rel="icon", href=config.root + 'images/favicon.ico')
+    link(rel="stylesheet", href=config.root + 'css/main.css')
+    link(rel="stylesheet", href=config.root + 'css/bulma.css')
+    link(rel="stylesheet", href=config.root + 'css/fa/css/all.css')
+  body
+    include navbar.pug
+    .hero.is-dark.is-fullheight-with-navbar
+      .hero-head
+        
+      .hero-body
+        if !is_post()
+          .container
+            .card
+              block content
+        if is_post()
+          .columns
+            article.article.column(itemscope, itemtype="http://schema.org/BlogPosting")
+              .card
+                block content
+            include aside.pug
+
+      .hero-foot
+        footer
+          .content.has-text-centered.is-dark
+            p
+              | Tema por
+              a(href="https://github.com/Amaury-tobias/hexo-theme-arybulma")=" Amaury"
+              | , Gracias a Hexo y Bulma

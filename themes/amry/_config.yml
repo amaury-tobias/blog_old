@@ -1,0 +1,27 @@
+
+root: /
+
+Home: /
+Archives: /archives
+About: /about
+
+language: es
+
+author:
+description:
+
+favicon: /favicon.ico
+
+
+# stylesheets loaded in the <head>
+stylesheets:
+- /css/hexo-theme-adoubi.css
+
+github: http://github.com/Amaury-Tobias
+twitter: https://twitter.com/Amaury_Tobias
+facebook: https://facebook.com/amaury.tobi
+mail: mailto:amaury.tobiasqr@gmail.com
+
+disqus:
+  enabled: true
+  shortname: amaurytobiasquiroz
