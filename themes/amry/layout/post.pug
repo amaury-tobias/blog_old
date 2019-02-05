@@ -8,13 +8,7 @@ block content
           p.heading
             time(datetime=page.date.toJSON())=date(page.date, 'LL')
           h1.is-1.title.has-text-dark=page.title
-    if page.tag && page.tag.length != 0
-      .level-item.is-grouped.is-grouped-multiline
-        each tag in page.tags.toArray()
-          .control
-            .tags.has-addons
-              span.tag.is-rounded.is-dark=tag.count
-              a.tag.is-rounded.is-link(href=config.root + tag.path)=tag.name
     hr
-    .content.has-text-centered!= page.content
+    .content.has-text-centered
+      != page.content
     include includes/comments.pug

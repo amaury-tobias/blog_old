@@ -23,3 +23,10 @@ aside.column.is-3
               a.level-item(href=url_for(page.next.path))
                 span.icon
                   i.fas.fa-chevron-right
+        if page.tags && page.tags.length != 0
+          .field.is-grouped.is-grouped-multiline
+              each tag in page.tags.toArray()
+                .control
+                  .tags.has-addons
+                    span.tag.is-rounded=tag.posts.length
+                    a.tag.is-rounded.is-link(href=config.root + tag.path)=tag.name
