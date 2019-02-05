@@ -39,6 +39,9 @@ if image located at site's `source/images` :
 **NOTICE: hexo will use site's source preferentially**
 
 ## Upgrade Logs
+v0.0.2 Feb 5 2019:
+- Sticky sidebar
+- Disqus Comments layout, config
 
 v0.0.1 Feb 4 2019:
 - Primer Version 

@@ -5,6 +5,11 @@
   font-weight: 700
 }
 
+#tools {
+  position: sticky;
+  top: 0;
+}
+
 .Eight_One {
   font-family: Eight_One;
   font-size: 1.3em;
