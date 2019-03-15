@@ -5,7 +5,7 @@
 # Site
 title: blog.amaurytq.me
 subtitle:
-description: Blog personal dedicado a la difusion de proyectos e ideas
+description: unknown me
 keywords:
 author: Amaury Tobias Quiroz
 language: es
@@ -22,9 +22,6 @@ permalink_defaults:
 source_dir: source
 public_dir: public
 tag_dir: tags
-archive_dir: archives
-category_dir: categories
-code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
 

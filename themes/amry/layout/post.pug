@@ -1,14 +1,15 @@
 extends includes/layout
 
 block content
-  .card-content
-    .level.has-text-centered
-      .level-item
-        div
-          p.heading
-            time(datetime=page.date.toJSON())=date(page.date, 'LL')
-          h1.is-1.title.has-text-dark=page.title
-    hr
-    .content.has-text-centered
-      != page.content
-    include includes/comments.pug
+  .card
+    .card-content
+      .level.has-text-centered
+        .level-item
+          div
+            p.heading
+              time(datetime=page.date.toJSON())=date(page.date, 'LL')
+            h1.is-1.title.has-text-dark=page.title
+      hr
+      .content.has-text-centered
+        != page.content
+      // include includes/comments.pug

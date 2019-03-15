@@ -5,8 +5,8 @@ block content
     .level
       .level-item.has-text-centered
         div
-          p.is-1.title.heading amaury
-          p.heading=config.description
+          p.is-1.title.heading tags
+          p.heading todas!!!
     .level
       .level-item.has-text-centered
         .field.is-grouped.is-grouped-multiline
@@ -17,5 +17,7 @@ block content
                 span.tag.is-rounded.is-info=tag.name
     .container.has-text-centered
       each post in site.posts.sort('date', -1).toArray()
-        div
-          a.is-link(href=url_for(post.path))=post.title
+        each tagP in post.tags.toArray()
+          if (tagP.name == page.tag)
+            div
+              a.is-link(href=url_for(post.path))=post.title
