@@ -1,8 +1,8 @@
 module.exports = {
   apps: [
     {
-      name: 'blog',
-      script: 'hexo server'
+      name: 'Blog',
+      script: './bin/www'
     }
   ],
   deploy: {
@@ -12,7 +12,7 @@ module.exports = {
       ref: 'origin/master',
       repo: 'git@github.com:amaury-tobias/blog.git',
       path: '/home/amaurytobias/production/blog',
-      'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js'
+      'post-deploy': 'npm install && hexo generate && pm2 startOrRestart ecosystem.config.js'
     }
   }
 }
