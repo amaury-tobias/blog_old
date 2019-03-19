@@ -10,8 +10,9 @@ html(class="has-navbar-fixed-bottom", lang=config.language)
     
     link(rel="icon", href=config.root + 'images/favicon.ico')
     link(rel="stylesheet", href=config.root + 'css/main.css')
-    link(rel="stylesheet", href=config.root + 'css/bulma.min.css')
-    link(rel="stylesheet", href=config.root + 'css/fa/css/all.css')
+    link(rel="stylesheet", href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css')
+    link(rel="stylesheet" href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr' crossorigin='anonymous')
+
   body
     include navbar.pug
     .hero.is-dark.is-fullheight-with-navbar
@@ -28,4 +29,4 @@ html(class="has-navbar-fixed-bottom", lang=config.language)
       .hero-foot
         .container.has-text-centered
           a(href='https://bulma.io' target='_blank' rel='noreferrer')
-            img(src='/images/made-with-bulma.png' alt='Made with Bulma' width='128' height='24')
+            img(src='/images/made-with-bulma--white.png' alt='Made with Bulma' width='128' height='24')
