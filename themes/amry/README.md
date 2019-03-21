@@ -1,12 +1,13 @@
-# hexo-theme-adoubi
+# hexo-theme-amry
 
-another simple hexo theme. [online demo](https://blog.amaurytq.me)
+Tema para hexo, construido con [Pug](https://pugjs.org/api/getting-started.html) y [Bulma](https://bulma.io/). [Demo (Personal Blog)](https://blog.amaurytq.me)
 
+// TODO: image DEMO
 ![demo](demo.png)
 
 ## Installation
 
-hexo-theme-amry developed with hexo 3.8
+hexo-theme-amry
 
 plugin dependencies:
 
@@ -20,7 +21,7 @@ modify site config
 
     theme: amry
 
-replace `themes/amry/sources/images/favicon.ico` with your own preference
+reemplaza `themes/amry/sources/images/favicon.ico` con tu favicon de preferencia.
 
 upgrade
 
@@ -28,9 +29,9 @@ upgrade
     git pull origin master
 
 
-## Display images in article:
+## Mostrar imágenes en los Post:
 
-if image located at site's `source/images` :
+Coloca las imágenes en `source/images` :
 
     img(src="/images/your-image.png")
 
@@ -39,6 +40,13 @@ if image located at site's `source/images` :
 **NOTICE: hexo will use site's source preferentially**
 
 ## Upgrade Logs
+v0.8.0 Mar 15 2019
+- Desactivados comentarios Disqus (aun funcionales) para respetar la privacidad de los usuarios
+- Bulma update to 0.7.4
+- Correcciones en Sidebar
+- Pagina de inicio
+- Pagina de tags
+
 v0.0.2 Feb 5 2019:
 - Sticky sidebar
 - Disqus Comments layout, config
@@ -52,6 +60,5 @@ resources usage:
 
 - Bulma.css
 - FontAwesome
-- normalize.css
 
 Keep `Theme By Amry , Powered By Hexo.` in footer and do whatever you want.

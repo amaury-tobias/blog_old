@@ -12,4 +12,17 @@ block content
       hr
       .content.has-text-centered
         != page.content
+        hr
+        .level.is-mobile
+          .level-item
+            if page.prev && is_post()
+              a.level-item(href=url_for(page.prev.path))
+                span.icon
+                  i.fas.fa-chevron-left
+                span.Eight_One mas nuevo
+            if page.next && is_post()
+              a.level-item(href=url_for(page.next.path))
+                span.Eight_One mas viejo
+                span.icon
+                  i.fas.fa-chevron-right
       // include includes/comments.pug
