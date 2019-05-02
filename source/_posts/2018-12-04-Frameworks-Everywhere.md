@@ -4,8 +4,10 @@ tags:
   - Dev
   - Day
 date: 2018-12-04 18:00:00
-author: Amaury_Tobias
+author: Amaury Tobias Quiroz
 twitter: Amaury_Tobias
+mastodon: amaury_tobias
+github: Amaury-Tobias
 comments: true
 ---
 

@@ -1,28 +1,55 @@
 extends includes/layout
 
 block content
-  .card
-    .card-content
-      .level.has-text-centered
-        .level-item
-          div
-            p.heading
+  .container
+    .level
+      .level-item.has-text-centered
+        div
+          p.is-1.title.heading=page.title
+          p.heading
               time(datetime=page.date.toJSON())=date(page.date, 'LL')
-            h1.is-1.title.has-text-dark=page.title
-      hr
-      .content.has-text-centered
-        != page.content
-        hr
-        .level.is-mobile
-          .level-item
-            if page.prev && is_post()
-              a.level-item(href=url_for(page.prev.path))
-                span.icon
-                  i.fas.fa-chevron-left
-                span.Eight_One mas nuevo
-            if page.next && is_post()
-              a.level-item(href=url_for(page.next.path))
-                span.Eight_One mas viejo
-                span.icon
-                  i.fas.fa-chevron-right
-      // include includes/comments.pug
+    .level-item
+      .media
+        .media-left
+          figure.image.is-64x64
+            img.is-rounded(src="/images/avatar.jpg")
+        .media-content
+          .content
+            p
+              strong=page.author
+          .level.is-mobile
+            .level-left
+              if (page.github)
+                a.level-item(href='https://github.com/'+page.github, target="_blank", rel="noreferrer")
+                  span.icon.is-small
+                    i.fab.fa-github
+              if (page.mastodon)
+                a.level-item(rel="me" href='https://mstdn.mx/@'+page.mastodon target="_blank")
+                  span.icon.is-small
+                    i.fab.fa-mastodon
+              if (page.twitter)
+                a.level-item(href='https://twitter.com/'+page.twitter, target="_blank", rel="noreferrer")
+                  span.icon.is-small
+                    i.fab.fa-twitter
+    if page.tags && page.tags.length != 0
+      .level-item
+        .field.is-grouped.is-grouped-multiline
+          each tag in page.tags.toArray()
+            a.control(href=config.root + tag.path)
+              .tags.has-addons
+                span.tag.is-rounded=tag.posts.length
+                span.tag.is-rounded.is-info=tag.name
+    .section.has-text-centered
+      !=page.content
+    .level.is-mobile
+        .level-item
+          if page.prev && is_post()
+            a.level-item(href=url_for(page.prev.path))
+              span.icon
+                i.fas.fa-chevron-left
+              span.heading.subtitle siguiente
+          if page.next && is_post()
+            a.level-item(href=url_for(page.next.path))
+              span.heading anterior
+              span.icon
+                i.fas.fa-chevron-right

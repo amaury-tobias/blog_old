@@ -3,8 +3,10 @@ title: Día de Muertos!!!!
 tags:
   - Day
 date: 2018-10-31 18:00:00
-author: Amaury_Tobias
+author: Amaury Tobias Quiroz
 twitter: Amaury_Tobias
+mastodon: amaury_tobias
+github: Amaury-Tobias
 comments: true
 ---
 

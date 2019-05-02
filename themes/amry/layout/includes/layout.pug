@@ -20,11 +20,7 @@ html(class="has-navbar-fixed-bottom", lang=config.language)
         if is_home() || is_tag()
           block content
         if is_post()
-          .columns
-            .column.is-9
-              block content
-            .column.is-3
-              include aside.pug
+          block content
         if is_archive()
       .hero-foot
         .container.has-text-centered

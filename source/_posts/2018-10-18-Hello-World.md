@@ -4,8 +4,10 @@ tags:
   - Day
   - Jekyll
 date: 2018-10-18 19:00:00
-author: Amaury_Tobias
+author: Amaury Tobias Quiroz
 twitter: Amaury_Tobias
+mastodon: amaury_tobias
+github: Amaury-Tobias
 comments: true
 ---
 
