@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+html(class='has-navbar-fixed-bottom', lang='es')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title= message
+    link(rel='stylesheet', href='css/main.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css')
+    link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr' crossorigin='anonymous')
+
+  body
+    nav.navbar.is-fixed-bottom.is-dark
+      .container
+        .navbar-brand
+          a.navbar-item.Eight_One(href='/') &lt;ary/&gt;
+          a.navbar-item(href='https://github.com/Amaury-Tobias', target='_blank', rel='noreferrer')
+            span.icon
+              i.fab.fa-github
+          a.navbar-item(rel='me' href='https://mstdn.mx/@amaury_tobias' target='_blank')
+            span.icon
+              i.fab.fa-mastodon
+          a.navbar-item(href='https://twitter.com/Amaury_Tobias', target='_blank', rel='noreferrer')
+            span.icon
+              i.fab.fa-twitter
+          a.navbar-item(href='/atom.xml')
+            span.icon
+              i.fas.fa-rss
+    .hero.is-dark.is-fullheight-with-navbar
+      .hero-body
+          .container
+            .level
+              .level-item.has-text-centered
+                div
+                  p.is-1.title.heading= status
+                  p.heading= message
+      .hero-foot
+        .container.has-text-centered
+          a(href='https://bulma.io' target='_blank' rel='noreferrer')
+            img(src='/images/made-with-bulma--white.png' alt='Made with Bulma' width='128' height='24')
