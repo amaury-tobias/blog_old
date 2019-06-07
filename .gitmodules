@@ -1,0 +1,3 @@
+[submodule "themes/hexo-theme-amry"]
+	path = themes/hexo-theme-amry
+	url = https://github.com/amaury-tobias/hexo-theme-amry.git
