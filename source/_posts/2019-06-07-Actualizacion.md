@@ -3,7 +3,6 @@ title: Actualización
 date: 2019-06-07 15:09:14
 tags:
   - Day
-  - Dev
 author: Amaury Tobias Quiroz
 ---
 
